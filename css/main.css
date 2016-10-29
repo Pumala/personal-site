@@ -272,14 +272,24 @@ h1 {
 *************************************/
 #connect {
     padding: 3em 0;
+    text-align: center;
 }
 #connect .container {
     padding: 10% 5%;
 }
 #connect h2 {
-    text-align: center;
     font-size: 2.25em;
-    margin-bottom: 1.5em;
+    margin-bottom: .25em;
+}
+#connect hr {
+    width: 140px;
+    height: 5px;
+    border: none;
+    background-color: orange;
+    margin-top: -45px;
+    border-radius: 95px 0;
+    margin-left: 80px;
+    display: inline-block;
 }
 .face-div {
     max-width: 350px;
@@ -354,6 +364,32 @@ textarea:active {
     background-color: #e2e2e2;
     transition: 0.3s;
 }
+#connect h3 {
+  margin: 3em auto;
+  max-width: 375px;
+  font-size: 1.25em;
+  line-height: 1.75em;
+}
+#connect .social-icons {
+  /*margin-top: 3em;*/
+}
+#connect .social-icons li {
+    display: inline-block;
+    padding: 1em 2em;
+}
+.social-icons i {
+    color: #222;
+    transition: .5s;
+}
+.social-icons p {
+  margin-bottom: .75em;
+}
+/*.social-icons i:hover,
+.fa-chevron-circle-up:hover {
+    color: rgba(241, 130, 50, .6);
+    transition: .5s;
+}*/
+
 /*************************************
             FOOTER SECTION
 *************************************/
@@ -384,7 +420,6 @@ textarea:active {
     display: inline-block;
     padding: 1em 2em;
 }
-.social-icons i,
 .fa-chevron-circle-up {
     color: #fff;
     transition: .5s;
@@ -449,6 +484,9 @@ textarea:active {
     label, input, textarea {
         font-size: 1.25em;
     }
+    .social-icons li {
+      padding: .5em 2em;
+    }
 }
 
 @media screen and (min-width: 800px) {
@@ -506,9 +544,9 @@ textarea:active {
     .input-item {
         width: 85%;
     }
-    /*.footer-item {
-        width: 33.3333333%;
-    }*/
+    .footer-item {
+        width: 50%;
+    }
     .skills {
         padding: 2rem 0;
     }
@@ -519,6 +557,10 @@ textarea:active {
     #projects h2,
     #connect h2 {
         font-size: 2.75em;
+    }
+    #connect hr {
+      width: 170px;
+      margin-left: 100px;
     }
     .code-icons,
     .projects-content a {
@@ -551,9 +593,9 @@ textarea:active {
         margin: 4em 0 .5em 0;
     }
     .social-icons li {
-      padding: 1em;
+      padding: 0 1em;
     }
-    .footer-item {
+    /*.footer-item {
         width: 33.3333333%;
-    }
+    }*/
 }
